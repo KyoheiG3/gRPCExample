@@ -1,0 +1,8 @@
+//
+//  gRPCExample.xcconfig
+//  SwiftGRPC
+//
+//  Created by Kyohei Ito on 2017/10/08.
+//
+
+HEADER_SEARCH_PATHS = $(SRCROOT)/grpc-swift/Sources/CgRPC/include
