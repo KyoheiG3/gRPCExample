@@ -105,7 +105,7 @@ SWIFT_VERSION = 4.0
 
 <img width="870" alt="2017-10-27 10 13 50" src="https://user-images.githubusercontent.com/5707132/32085149-6961f812-bb08-11e7-91a6-8b47d3b78b46.png">
 
-#### Remove zlib-example from TARGET
+#### Remove zlib-example and RootsEncoder from TARGET
 
 <img width="165" alt="2017-10-27 10 22 54" src="https://user-images.githubusercontent.com/5707132/32085181-7fe3c836-bb08-11e7-9960-f76e83627c29.png">
 
