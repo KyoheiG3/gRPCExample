@@ -97,7 +97,7 @@ IPHONEOS_DEPLOYMENT_TARGET = 9.0
 
 <img width="870" alt="2017-10-27 10 12 37" src="https://user-images.githubusercontent.com/5707132/32085142-64ad3912-bb08-11e7-84b2-c06cbfb0a7c5.png">
 
-#### Change Swift Language Version
+#### Change Swift Language Version for gRPC TARGET
 
 ```
 SWIFT_VERSION = 4.0
