@@ -105,9 +105,9 @@ SWIFT_VERSION = 4.0
 
 <img width="870" alt="2017-10-27 10 13 50" src="https://user-images.githubusercontent.com/5707132/32085149-6961f812-bb08-11e7-91a6-8b47d3b78b46.png">
 
-#### Remove zlib-example and RootsEncoder from TARGET
+#### Remove zlib-example, RootsEncoder and protoc-gen-swift from TARGET
 
-<img width="165" alt="2017-10-27 10 22 54" src="https://user-images.githubusercontent.com/5707132/32085181-7fe3c836-bb08-11e7-9960-f76e83627c29.png">
+<img width="172" alt="2018-03-01 15 28 27" src="https://user-images.githubusercontent.com/5707132/36830046-462e5bd2-1d65-11e8-85b3-4c1089b51461.png">
 
 ## MyProject Build Settings
 
