@@ -17,6 +17,10 @@ $ make
 
 # How to build grpc-swift
 
+#### Requirements
+
+- Xcode 9.3
+
 #### Add grpc-swift
 
 ```
@@ -29,12 +33,7 @@ $ cd grpc-swift
 #### generate-xcodeproj
 
 ```
-$ make
-$ vim Makefile
-```
-
-```
-#swift package generate-xcodeproj
+$ make project
 ```
 
 #### remove ignore
@@ -44,7 +43,7 @@ $ vim .gitignore
 ```
 
 ```
-#SwiftGRPC.xcodeproj
+#/SwiftGRPC.xcodeproj
 ```
 
 #### edit modulemaps
@@ -55,14 +54,6 @@ $ vim SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap
 
 ```
 umbrella "../../../../grpc-swift/Sources/BoringSSL/include"
-```
-
-```
-$ vim SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap
-```
-
-```
-umbrella "../../../../grpc-swift/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include"
 ```
 
 This is not required. However, if you don't change, others may get build error.
@@ -97,17 +88,11 @@ IPHONEOS_DEPLOYMENT_TARGET = 9.0
 
 <img width="870" alt="2017-10-27 10 12 37" src="https://user-images.githubusercontent.com/5707132/32085142-64ad3912-bb08-11e7-84b2-c06cbfb0a7c5.png">
 
-#### Change Swift Language Version for gRPC TARGET
+#### Remove RootsEncoder, Simple, Echo, protoc-gen-swift and protoc-gen-swiftgrpc from TARGET
 
-```
-SWIFT_VERSION = 4.0
-```
-
-<img width="870" alt="2017-10-27 10 13 50" src="https://user-images.githubusercontent.com/5707132/32085149-6961f812-bb08-11e7-91a6-8b47d3b78b46.png">
-
-#### Remove zlib-example, RootsEncoder and protoc-gen-swift from TARGET
-
-<img width="172" alt="2018-03-01 15 28 27" src="https://user-images.githubusercontent.com/5707132/36830046-462e5bd2-1d65-11e8-85b3-4c1089b51461.png">
+| before | after |
+|---|---|
+| <img width="173" alt="2018-04-11 13 24 02" src="https://user-images.githubusercontent.com/5707132/38596383-3451ee50-3d8c-11e8-8142-094aa4a83094.png"> | <img width="172" alt="2018-04-11 13 26 28" src="https://user-images.githubusercontent.com/5707132/38596387-36864d6a-3d8c-11e8-9141-e5846068e755.png"> |
 
 ## MyProject Build Settings
 
@@ -115,13 +100,9 @@ SWIFT_VERSION = 4.0
 
 <img width="272" alt="2017-10-27 11 49 33" src="https://user-images.githubusercontent.com/5707132/32085944-faadaa42-bb0c-11e7-9e82-b80cb23051f4.png">
 
-#### Link Binary With Libraries
+#### Embed Binary
 
-<img width="1129" alt="2017-10-27 10 27 05" src="https://user-images.githubusercontent.com/5707132/32085184-85fde0ee-bb08-11e7-89a8-8fe18d3d7365.png">
-
-#### Copy Files
-
-<img width="1129" alt="2017-10-27 10 27 19" src="https://user-images.githubusercontent.com/5707132/32085187-9043bd4e-bb08-11e7-9cae-654580df0c2d.png">
+<img width="870" alt="2018-04-11 13 48 50" src="https://user-images.githubusercontent.com/5707132/38596880-2b9ed14e-3d8f-11e8-9c57-e2efa9ccc419.png">
 
 #### Add Header Search Paths
 
