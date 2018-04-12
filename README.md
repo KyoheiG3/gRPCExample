@@ -100,9 +100,9 @@ IPHONEOS_DEPLOYMENT_TARGET = 9.0
 
 <img width="272" alt="2017-10-27 11 49 33" src="https://user-images.githubusercontent.com/5707132/32085944-faadaa42-bb0c-11e7-9e82-b80cb23051f4.png">
 
-#### Embed Binary
+#### Embed Frameworks
 
-<img width="870" alt="2018-04-11 13 48 50" src="https://user-images.githubusercontent.com/5707132/38596880-2b9ed14e-3d8f-11e8-9c57-e2efa9ccc419.png">
+<img width="870" alt="2018-04-11 13 48 50" src="https://user-images.githubusercontent.com/5707132/38656481-c845121c-3e55-11e8-86a4-8be980caa814.png">
 
 #### Add Header Search Paths
 
